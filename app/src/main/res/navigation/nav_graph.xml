@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/portalFragment">
+    <fragment
+        android:id="@+id/portalFragment"
+        android:name="com.example.madlevel3task2.PortalFragment"
+        android:label="portal_fragment"
+        tools:layout="@layout/portal_fragment" >
+        <action
+            android:id="@+id/action_portalFragment_to_addPortalFragment3"
+            app:destination="@id/addPortalFragment3" />
+    </fragment>
+    <fragment
+        android:id="@+id/addPortalFragment3"
+        android:name="com.example.madlevel3task2.AddPortalFragment"
+        android:label="AddPortalFragment" >
+        <action
+            android:id="@+id/action_addPortalFragment3_to_portalFragment"
+            app:destination="@id/portalFragment" />
+    </fragment>
+</navigation>
